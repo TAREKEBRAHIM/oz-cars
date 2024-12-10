@@ -1,0 +1,399 @@
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-links li {
+    margin-bottom: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  /* Hide the menu by default on mobile */
+  nav ul {
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Add some space between items */
+    background-color: #fff; /* You can change this to fit your design */
+    position: absolute;
+    top: 70px; /* Adjust position */
+    left: 0;
+    width: 100%; /* Full width menu */
+    padding: 15px 0;
+  }
+
+  /* Align menu items to the left */
+  nav ul li {
+    text-align: left;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .men-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav-menu ul li a {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-white {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+    padding: 5px 19px;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu p {
+    font-size: 9px;
+    color: #cccccc;
+    position: relative;
+    bottom: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px 0px 0px 20px;
+    top: 81px;
+    z-index: 1;
+    width: 235px;
+    height: 170px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu .dropdown-inp {
+    padding: 12px 33px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu .drop-down-btn button {
+    padding: 4px 16px;
+    font-size: 10px;
+    text-transform: capitalize;
+    background-color: #0061b4;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    left: 2px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-banner .overlay h1 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu .dropdown-inp::placeholder {
+    font-size: 10px;
+    position: relative;
+    left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-banner .overlay .buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header .the-navbar .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-sec .dropdown-frisline .h-drop {
+    color: #707070;
+    font-size: 9px;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-sec .dropdown-frisline .close-dropdown {
+    color: #707070;
+    font-size: 25px;
+    text-transform: capitalize;
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu h4 {
+    color: #777;
+    font-size: 11px;
+    text-transform: capitalize;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .head-text .head-text-two p {
+    color: #707070;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 5px 15px;
+    background-color: #f0f0f0;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-section a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-red {
+    padding: 5px 19px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  input {
+    padding: 18px 1px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  input::placeholder {
+    color: #707070;
+    position: relative;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-blue {
+    background-color: blue;
+    color: white;
+    padding: 5px 19px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-submit {
+    padding: 11px 13px;
+    background-color: #0061b4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .form-btns {
+    display: flex;
+    gap: 1px;
+    position: relative;
+    bottom: 129px;
+    left: 5px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .start .start-text h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chat-form .comments {
+    margin-bottom: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  
+  }
+}
+
+@media (max-width: 768px) {
+  .chat-p {
+    color: #707070;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chat-form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-top-left-radius: 0px;
+    background-color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .chat-form .chat-form-btn {
+    font-size: 12px;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chat-form .chat-head {
+    color: #707070;
+    font-size: 13px;
+    margin-top: 1px;
+    margin-bottom: -10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .auction-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  #chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 1%;
+    cursor: pointer;
+    background-color: #35acf2;
+    color: white;
+    padding: 5px 32px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border: none;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .head-text .head-text-one p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  #chat-form {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    display: none;
+    z-index: 1;
+  }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .footer .foot-cont {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .footer .column {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .footer .column h3 {
+    font-size: 14px;
+  }
+
+  .footer .column ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer .column ul li a {
+    font-size: 14px;
+  }
+
+  .footer .regster,
+  .footer .footer-note p {
+    font-size: 11px;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer .foot-cont {
+    padding-top: 10px;
+  }
+
+  .footer .column h3 {
+    font-size: 13px;
+  }
+
+  .footer .column ul li {
+    font-size: 12px;
+  }
+
+  .footer .regster,
+  .footer .footer-note p {
+    font-size: 10px;
+    text-align: center;
+  }
+}

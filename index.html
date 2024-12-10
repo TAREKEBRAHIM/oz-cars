@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>oz home</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+
+    <header>
+      <div class="top-nav">
+        <div class="container">
+          <div class="top-sec">
+            <div class="left-section">
+              <span class="location-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+              <span>Dealership</span>
+              <a href="#" id="select-link">Select</a>
+
+              <!-- Dropdown Menu -->
+              <div class="dropdown-menu" id="dropdown">
+                <div class="dropdown-frisline">
+                  <h2 class="h-drop">find your local ozcar:</h2>
+                  <span
+                    class="close-dropdown"
+                    id="close-dropdown"
+                    style="color: #cccccc"
+                    >×</span
+                  >
+                </div>
+                <input
+                  class="dropdown-inp"
+                  type="text"
+                  placeholder="type your postcode or suburb..."
+                />
+                <h4>delarship</h4>
+                <p>Enter your postcode or suburb above</p>
+                <div class="drop-down-btn">
+                  <button>select</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-section">
+              <span class="login-icon">
+                <img src="./img/user.svg" />
+              </span>
+              <a href="#">OzClub Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="nav-toggle">☰</button>
+      <nav id="nav-men">
+        <button id="close-nav">✖</button>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#New">New</a></li>
+          <li><a href="#Popular">Popular</a></li>
+          <li><a href="#Trending">Trending</a></li>
+          <li><a href="#Categories">Categories</a></li>
+        </ul>
+      </nav>
+      <div class="the-navbar">
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+              <img src="./img/Ozcar_Logo_RGB@2x.png" alt="OzCar Logo" />
+            </div>
+
+            <nav id="nav-menu" class="nav-menu">
+              <ul>
+                <li><a href="#">List your car</a></li>
+                <li><a href="#">Trade-in</a></li>
+                <li><a href="#">Better car 4 less</a></li>
+                <li><a href="#">Free credit score</a></li>
+                <li><a href="#">Custom cars</a></li>
+                <li><a href="#">Book a service</a></li>
+                <li><a href="#">Dealerships</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main-banner -->
+    <section class="main-banner">
+      <div class="overlay">
+        <h1>
+          Over 160,000 Cars Sold<br />
+          Over The Past 20 Years
+        </h1>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="form-btns">
+        <button id="search-make-model" class="btn-red">
+          Search Make / Model
+        </button>
+
+        <button id="search-category" class="btn-red">Search Category</button>
+        <button class="btn-blue">List Your Car 4 Free</button>
+      </div>
+      <!-- car-search-form -->
+      <div id="form-container" class="form-container">
+        <form id="car-search-form">
+          <div class="row">
+            <div class="col">
+              <select id="make" name="make" required>
+                <option value="">Make</option>
+              </select>
+            </div>
+            <div class="col">
+              <select id="model" name="model" required>
+                <option value="">Model</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <select id="variant" name="variant">
+                <option value="">Variant</option>
+              </select>
+            </div>
+            <div class="col">
+              <select id="series" name="series">
+                <option value="">Series</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <select id="year-min" name="year-min">
+                <option value="">Year (Min)</option>
+              </select>
+            </div>
+            <div class="col">
+              <select id="year-max" name="year-max">
+                <option value="">Year (Max)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <select id="view-all" name="view-all">
+                <option value="">View All</option>
+              </select>
+            </div>
+            <div class="col">
+              <input type="text" id="name" name="name" placeholder="Name" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                id="mobile-number"
+                name="mobile-number"
+                placeholder="Mobile Number"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="text"
+                id="postcode"
+                name="postcode"
+                placeholder="Postcode"
+              />
+            </div>
+          </div>
+
+          <div class="advanced-search">
+            <a href="#">Advanced Search &#8853;</a>
+            <button type="submit" class="btn-submit">Search Now</button>
+          </div>
+        </form>
+      </div>
+      <!-- category-section -->
+      <section id="category-sec" class="category-sec">
+        <div class="auction-grid">
+          <div class="category">
+            <img src="./img/Screenshot_1.png" alt="Hatchbacks" />
+            <p>hatchbacks</p>
+          </div>
+          <div class="category">
+            <img src="./img/Screenshot_2.png" alt="Sedans" />
+            <p>sedans</p>
+          </div>
+          <div class="category">
+            <img src="./img/Screenshot_3.png" alt="People Movers" />
+            <p>2wd suv</p>
+          </div>
+          <div class="category">
+            <img src="./img/Screenshot_4.png" alt="Utes" />
+
+            <p>4wd suv</p>
+          </div>
+          <div class="category">
+            <img src="./img/Screenshot_5.png" alt="2WD SUV" />
+            <p>peole movers</p>
+          </div>
+          <div class="category">
+            <img src="./img/Screenshot_6.png" alt="4WD SUV" />
+
+            <p>4WD SUV</p>
+          </div>
+          <div class="category">
+            <img src="./img/Screenshot_7 (1).png" alt="Station Wagons" />
+            <p>2wd ute</p>
+          </div>
+
+          <div class="category">
+            <img src="./img/Screenshot_1.png" alt="Sports Cars" />
+            <p>4wd ute</p>
+          </div>
+
+          <div class="category">
+            <img src="./img/Screenshot_1.png" alt="Sports Cars" />
+            <p>castom cars</p>
+          </div>
+
+          <div class="category">
+            <img src="./img/Screenshot_1.png" alt="Sports Cars" />
+            <p>4wd suv</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <div class="head-text">
+        <div class="head-text-one">
+          <p>Heavily reduced cars</p>
+        </div>
+
+        <div class="head-text-two">
+          <p>view all</p>
+        </div>
+      </div>
+      <!-- the-slider -->
+      <div class="owl-carousel owl-carousel-cars owl-theme">
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p">$28,342</h3>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="price-hot">hot price</div>
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p"><del>$28,342</del></h3>
+              <div class="holder">
+                <p class="red-sec">oz</p>
+                <p class="blue-sec">club</p>
+              </div>
+              <p class="price">$26,342</p>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p">$28,342</h3>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="price-hot">hot price</div>
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p"><del>$28,342</del></h3>
+              <div class="holder">
+                <p class="red-sec">oz</p>
+                <p class="blue-sec">club</p>
+              </div>
+              <p class="price">$26,342</p>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- the-slider-end -->
+    <div class="container">
+      <div class="start-cont">
+        <div class="start">
+          <div class="start-text">
+            <h1>list your car 4 free</h1>
+            <div class="start-btn">
+              <button>start now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="head-text">
+        <div class="head-text-one">
+          <p>Heavily reduced cars</p>
+        </div>
+
+        <div class="head-text-two">
+          <p>view all</p>
+        </div>
+      </div>
+      <!-- the-slider- -->
+      <div class="owl-carousel owl-carousel-cars owl-theme">
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p">$28,342</h3>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="price-hot">hot price</div>
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p"><del>$28,342</del></h3>
+              <div class="holder">
+                <p class="red-sec">oz</p>
+                <p class="blue-sec">club</p>
+              </div>
+              <p class="price">$26,342</p>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- the-slider-end -->
+
+    <!-- the-slider-text -->
+    <div class="container">
+      <div class="start-cont">
+        <div class="start">
+          <div class="start-text">
+            <h1>
+              get an instant<br />
+              trade in price on<br />
+              your car
+            </h1>
+            <div class="start-btn">
+              <button>start now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="head-text">
+        <div class="head-text-one">
+          <p>ozcar</p>
+        </div>
+
+        <div class="head-text-two">
+          <p>view all</p>
+        </div>
+      </div>
+      <!-- the-slider-end -->
+      <div class="owl-carousel owl-carousel-cars owl-theme">
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p">$28,342</h3>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="price-hot">hot price</div>
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p"><del>$28,342</del></h3>
+              <div class="holder">
+                <p class="red-sec">oz</p>
+                <p class="blue-sec">club</p>
+              </div>
+              <p class="price">$26,342</p>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- the-slider-end -->
+
+    <!-- the-slider-header -->
+    <div class="container">
+      <div class="start-cont">
+        <div class="start">
+          <div class="start-text">
+            <h1>
+              get an instant<br />
+              trade in price on<br />
+              your car
+            </h1>
+            <div class="start-btn">
+              <button>start now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="head-text">
+        <div class="head-text-one">
+          <p>ozcar campdelltown specials</p>
+        </div>
+
+        <div class="head-text-two">
+          <p>view all</p>
+        </div>
+      </div>
+
+      <!-- the-slider-start -->
+      <div class="owl-carousel owl-carousel-cars owl-theme">
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p">$28,342</h3>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="price-hot">hot price</div>
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p"><del>$28,342</del></h3>
+              <div class="holder">
+                <p class="red-sec">oz</p>
+                <p class="blue-sec">club</p>
+              </div>
+              <p class="price">$26,342</p>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- the-slider-header -->
+    <div class="container">
+      <div class="start-cont">
+        <div class="start">
+          <div class="start-text">
+            <h1>
+              find out your<br />
+              credit score
+            </h1>
+            <div class="start-btn">
+              <button>start now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="head-text">
+        <div class="head-text-one">
+          <p>ozcar cardiff specials</p>
+        </div>
+
+        <div class="head-text-two">
+          <p>view all</p>
+        </div>
+      </div>
+      <!-- the-slider-->
+      <div class="owl-carousel owl-carousel-cars owl-theme">
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p">$28,342</h3>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="price-hot">hot price</div>
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p"><del>$28,342</del></h3>
+              <div class="holder">
+                <p class="red-sec">oz</p>
+                <p class="blue-sec">club</p>
+              </div>
+              <p class="price">$26,342</p>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="start-cont">
+        <div class="start">
+          <div class="start-text">
+            <h1>
+              get an instant<br />
+              trade in price on<br />
+              your car
+            </h1>
+            <div class="start-btn">
+              <button>start now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="head-text">
+        <div class="head-text-one">
+          <p>ozcar gosford specials</p>
+        </div>
+
+        <div class="head-text-two">
+          <p>view all</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-carousel-cars owl-theme">
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p">$28,342</h3>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="price-hot">hot price</div>
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p"><del>$28,342</del></h3>
+              <div class="holder">
+                <p class="red-sec">oz</p>
+                <p class="blue-sec">club</p>
+              </div>
+              <p class="price">$26,342</p>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="start-cont">
+        <div class="start">
+          <div class="start-text">
+            <h1>
+              get an instant<br />
+              trade in price on<br />
+              your car
+            </h1>
+            <div class="start-btn">
+              <button>start now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="head-text">
+        <div class="head-text-one">
+          <p>ozcar dubbo specials</p>
+        </div>
+
+        <div class="head-text-two">
+          <p>view all</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-carousel-cars owl-theme">
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p">$28,342</h3>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="price-hot">hot price</div>
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p"><del>$28,342</del></h3>
+              <div class="holder">
+                <p class="red-sec">oz</p>
+                <p class="blue-sec">club</p>
+              </div>
+              <p class="price">$26,342</p>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="start-cont">
+        <div class="start">
+          <div class="start-text">
+            <h1>24 HOUR TEST DRIVE*</h1>
+            <div class="start-btn">
+              <button>start now</button>
+            </div>
+            <p class="regs-p">Terms & Conditions apply</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="head-text">
+        <div class="head-text-one">
+          <p>ozcar wodonga specials</p>
+        </div>
+
+        <div class="head-text-two">
+          <p>view all</p>
+        </div>
+      </div>
+
+      <div class="owl-carousel owl-carousel-cars owl-theme">
+        <div class="item">
+          <div class="card">
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p">$28,342</h3>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <div class="price-hot">hot price</div>
+            <img
+              src="./img/46b06130d4e97fba89b675df5a0be562@2x.png"
+              alt="Card 1 Image"
+            />
+            <div class="border-cont">
+              <p class="main-p">kia sortage sli (awd) 2015</p>
+              <div class="card-p-one">
+                <p>124,689 km</p>
+                <p>silver</p>
+              </div>
+              <div class="card-p-three">
+                <p>auto</p>
+                <p>2.4l 4cyl</p>
+              </div>
+            </div>
+            <div class="card-p-two">
+              <h3 class="moving-p"><del>$28,342</del></h3>
+              <div class="holder">
+                <p class="red-sec">oz</p>
+                <p class="blue-sec">club</p>
+              </div>
+              <p class="price">$26,342</p>
+              <img class="icon-img" src="./img/comments.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="foot-cont">
+          <div class="column">
+            <img
+              src="./img/Ozcar_Logo_RGB@2x.png"
+              alt="OzCar Logo"
+              style="width: 100px"
+            />
+            <h1>13 69 227</h1>
+            <p class="regster">® Registered Trademark. © OzCar Pty Ltd.</p>
+          </div>
+          <div class="column">
+            <h3>Legal information</h3>
+            <ul>
+              <li><a href="#">OzCar Connect Terms & Conditions</a></li>
+              <li><a href="#">OzCar Connect Privacy Policy</a></li>
+              <li><a href="#">OzCar Credit Score Terms Of Use</a></li>
+              <li><a href="#">OzCar Finance Disclaimer</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Roadside & Warranty</h3>
+            <ul>
+              <li><a href="#">OzCar Australia Wide Roadside</a></li>
+              <li><a href="#">OzCar Vehicle Warranty Plan</a></li>
+              <li><a href="#">Become A Dealer</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="#">OzCar Connect Contact Details</a></li>
+              <li><a href="#">OzCar Contact Details</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-note">
+          <p>
+            Over 160,000 cars sold over the last 20 years. 8 Dealerships with
+            over Finance Subject to Approved Purchasers. ^^Terms and conditions
+            apply. 1,000 quality used cars available... *20% Off excludes
+            advertised specials. Dubbo Dealership will close at Finance Subject
+            to Approved Purchasers. ^^Terms and *CONDITIONS APPLY. *All Finance
+            Subject to Approved Purchasers. ^^Terms and conditions apply. *20%
+            Off excludes advertised specials. Dubbo Dealership will close at
+            6pm. *20% Off excludes advertised specials. Dubbo Dealership will
+            close Purchasers.Terms and *CONDITIONS APPLY. *All Finance Subject
+            close at Finance Subject to Approved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <button id="chat-button" onclick="toggleChat()">
+      <i class="fa-regular fa-comments"></i>Chat now
+    </button>
+
+    <div id="chat-form" style="display: none" class="chat-form-hidden">
+      <div class="move-btn">
+        <button class="close-btn" onclick="toggleChat()">
+          <i class="fa-regular fa-comments"></i> chat now
+        </button>
+      </div>
+
+      <form class="chat-form">
+        <h3 class="chat-head">Welcome to our live chat</h3>
+        <p class="chat-p">
+          Our agents aren't available at this<br />
+          time. Please leave a message. Thank<br />
+          you.
+        </p>
+
+        <input class="text" type="text" placeholder="Name" />
+        <input class="email" type="email" placeholder="Email" />
+        <input class="comments" type="text" placeholder="Comments" />
+        <div class="chat-btn">
+          <button class="chat-form-btn">Send Email</button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      let isChatOpen = false;
+
+      function toggleChat() {
+        const chatForm = document.getElementById("chat-form");
+        const chatButton = document.getElementById("chat-button");
+
+        // Toggle the chat form and chat button visibility
+        isChatOpen = !isChatOpen;
+        chatForm.style.display = isChatOpen ? "block" : "none";
+        chatButton.style.display = isChatOpen ? "none" : "block";
+      }
+    </script>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/java.js"></script>
+  </body>
+</html>
